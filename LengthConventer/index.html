@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Conventer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Centimeter to Inches
+    <div id="wrapper">
+        <h2>Cm to Inches</h2>
+        <div>
+            <input type="text" id="input" placeholder="Length in cm">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()">Convert to Inches</button>
+        </div>
+        <div id="result">
+
+        </div>
+    </div>
+
+    <script>
+        function convert(){
+       const cmval = Number(document.getElementById("input").value)
+        const inchval = cmval/2.54
+        const result = document.getElementById("result")
+        result.innerHTML= inchval.toFixed(2) +" inches"
+        }
+    </script> -->
+
+    <!-- ------Celcius to Fahrenheit-------- -->
+
+    <div id="wrapper">
+        <h2> Celcius to Fahrenheit</h2>
+        <div>
+            <input type="text" id="input" placeholder="Value in Celcius">
+        </div>
+        <div>
+            <button type="submit" onclick="convert()"> Convert into Fahrenheit</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function convert(){
+            let celval = Number(document.getElementById("input").value)
+            let fahval = (celval*9/5) + 32
+            let result = document.getElementById("result")
+            result.innerHTML= fahval + " Fahrenheit"
+        }
+    </script>
+
+    
+</body>
+</html>
